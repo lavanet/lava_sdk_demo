@@ -60,6 +60,16 @@ After all this is just an demo, so it takes a bit of tweaking to get this up and
     ./scripts/init_one_provider_lava.sh
     ```
 
+4. Get staked account
+
+    ```bash
+    # Fetch private key for staked user
+    lavad keys export user4 --unsafe --unarmored-hex
+
+    # Copy private key in the:
+    # lava-sdk-demo/.env
+    ```
+
 5. Start an app
 
     ```bash
