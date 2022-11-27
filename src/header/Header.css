@@ -1,0 +1,17 @@
+.Header {
+    background-image: url(./header.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px; /* you may also change this */
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+.Title{
+    padding: 0;
+    margin-top: 0;
+    font-size: 90px;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 270px; 
+}
