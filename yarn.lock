@@ -7343,9 +7343,9 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
-"lava-sdk@github:lavanet/lava-sdk#feature/integrate_state_handling":
+"lava-sdk@github:lavanet/lava-sdk#d09e258042a5cf8cc0c224f548bba3be4f33415c":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/lavanet/lava-sdk.git#a80a36159bb5dbaf14beae115e52dae97bb2c0f9"
+  resolved "git+ssh://git@github.com/lavanet/lava-sdk.git#d09e258042a5cf8cc0c224f548bba3be4f33415c"
   dependencies:
     "@cosmjs/amino" "^0.29.4"
     "@cosmjs/crypto" "^0.29.4"

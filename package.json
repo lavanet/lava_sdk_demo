@@ -13,7 +13,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "lava-sdk": "github:lavanet/lava-sdk#feature/integrate_state_handling",
+    "lava-sdk": "github:lavanet/lava-sdk#d09e258042a5cf8cc0c224f548bba3be4f33415c",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
