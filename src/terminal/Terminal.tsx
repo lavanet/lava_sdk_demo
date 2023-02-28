@@ -1,10 +1,15 @@
 import "./Terminal.css";
-import { Message } from "../app/App";
+
+
+export interface Message {
+  type: string;
+  message: number;
+}
 
 function Terminal(props: any) {
   return (
     <div className="Terminal">
-      <div className="fakeMenu">
+      <div className="fakeMenu" style={{width:"750px!important"}}>
         <div className="fakeButtons fakeClose"></div>
         <div className="fakeButtons fakeMinimize"></div>
         <div className="fakeButtons fakeZoom"></div>
@@ -12,7 +17,6 @@ function Terminal(props: any) {
       <div className="fakeScreen">
         {props.message
           .slice(0)
-          .reverse()
           .map((item: Message, index: any) => {
             return (
               <div className="terminalItem" key={index}>

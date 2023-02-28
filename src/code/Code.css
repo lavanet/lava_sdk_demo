@@ -28,7 +28,7 @@
 }
 
 .fakeMenu {
-  width: 740;
+  width: 740px;
   box-sizing: border-box;
   height: 25px;
   background-color: #bbb;
@@ -37,9 +37,9 @@
   border-top-left-radius: 5px;
 }
 
-.fakeScreen {
+.fakeScreen2 {
 
-  overflow-x: hidden !important;
+
   background-color: #151515;
   box-sizing: border-box;
   width: 740px;
@@ -48,14 +48,12 @@
   padding: 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  overflow-y: scroll;
 
 }
 
 .terminalItem {
   text-align: left;
   font-size: 1.25em;
-  font-family: monospace;
   color: #fff;
   margin-top: 10px;
 }
