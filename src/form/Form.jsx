@@ -1,7 +1,6 @@
 import "./Form.css";
 import { Grid, TextField, Button } from "@mui/material";
 import { useState, useEffect } from "react";
-import LavaSDK from "lava-sdk";
 import Config from "../config";
 
 function Form(props) {
@@ -11,17 +10,7 @@ function Form(props) {
 
   // Init SDK on app start
   useEffect(() => {
-    const initSDK = async () => {
-      const sdk = await new LavaSDK({
-        privateKey: Config.PRIVATE_KEY,
-        chainID: Config.CHAIN_ID,
-        lavaEndpoint: Config.LAVA_ENDPOINT, // Optional
-        rpcInterface:  Config.RPC_INTERFACE, // Optional
-      }
-      );
-
-      setLavaSDK(sdk);
-    };
+    const initSDK = async () => {};
 
     initSDK().catch(console.error);
   }, []);
@@ -37,8 +26,8 @@ function Form(props) {
 
     try {
       const response = await lavaSDK.sendRelay({
-        method:method, 
-        params:param
+        method: method,
+        params: param,
       });
 
       // Print response
@@ -59,7 +48,7 @@ function Form(props) {
       ...m,
       {
         type: "Response",
-        message: JSON.stringify(response,null,'\t'),
+        message: JSON.stringify(response, null, "\t"),
       },
     ]);
   };

@@ -2,29 +2,29 @@
   "testnet": [
     {
       "rpcAddress": "127.0.0.1:2271",
-      "publicAddress": "lava@1a772a4xl9yx845arws6mperpe43ns8ca2533qs"
+      "publicAddress": "lava@10569jkqw5cgy8m8s97qwz9cd49tetvhgd0eaku"
     },
     {
       "rpcAddress": "127.0.0.1:2272",
-      "publicAddress": "lava@16088hujrzz2n3nfvsv5uru49kg7xgn9rqk5jfk"
+      "publicAddress": "lava@19d6rtf0400xrzzq65p6ktecgcn3738kdrpmaxa"
     },
     {
       "rpcAddress": "127.0.0.1:2273",
-      "publicAddress": "lava@1vm227nyk4nem6uey24ra4kkpwj38phemqtd6mw"
+      "publicAddress": "lava@1whlsc3agx7hg4d52t0jqdxg4xy5dm28x04n33p"
     }
   ],
   "mainnet": [
     {
       "rpcAddress": "127.0.0.1:2271",
-      "publicAddress": "lava@1a772a4xl9yx845arws6mperpe43ns8ca2533qs"
+      "publicAddress": "lava@10569jkqw5cgy8m8s97qwz9cd49tetvhgd0eaku"
     },
     {
       "rpcAddress": "127.0.0.1:2272",
-      "publicAddress": "lava@16088hujrzz2n3nfvsv5uru49kg7xgn9rqk5jfk"
+      "publicAddress": "lava@19d6rtf0400xrzzq65p6ktecgcn3738kdrpmaxa"
     },
     {
       "rpcAddress": "127.0.0.1:2273",
-      "publicAddress": "lava@1vm227nyk4nem6uey24ra4kkpwj38phemqtd6mw"
+      "publicAddress": "lava@1whlsc3agx7hg4d52t0jqdxg4xy5dm28x04n33p"
     }
   ]
 }

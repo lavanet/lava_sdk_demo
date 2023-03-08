@@ -7,7 +7,8 @@ import Terminal from "../terminal/Terminal";
 import Code from "../code/Code";
 import Form from "../form/Form";
 import Config from "../config";
-import { LavaEtherProvider } from "lava-sdk";
+//import { JsonRpcProvider } from "ethers";
+import { LavaSDK } from "lava-sdk";
 
 // Import css
 import "./App.css";
@@ -24,13 +25,14 @@ function App() {
   useEffect(() => {
     const initSDK = async () => {
       try {
-        const etherSDK = await new LavaEtherProvider({
-          privKey: Config.PRIVATE_KEY,
+        //let url = Config.ETHER_ENDPOINT;
+        //let ethersProvider = new JsonRpcProvider(url);
+        const ethersProvider = await new LavaSDK({
+          privateKey: Config.PRIVATE_KEY,
           chainID: Config.CHAIN_ID,
-          pairingListConfig: Config.LAVA_ENDPOINT, // Optional
         });
 
-        setEtherSDK(etherSDK);
+        setEtherSDK(ethersProvider);
       } catch (err) {
         console.log(err);
       }
@@ -45,7 +47,10 @@ function App() {
     printRequest("eth_blockNumber", []);
     try {
       console.log(EtherSDK);
-      const blockNumber = await EtherSDK.getBlockNumber();
+      const blockNumber = await EtherSDK.sendRelay({
+        method: "eth_blockByNumber",
+        params: [],
+      });
 
       // Print response
       printResponse(blockNumber);
