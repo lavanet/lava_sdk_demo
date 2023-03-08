@@ -21,6 +21,8 @@ function App() {
 
   const [EtherSDK, setEtherSDK] = useState();
 
+  const [loaded, setLoaded] = useState();
+
   // Init SDK on app start
   useEffect(() => {
     const initSDK = async () => {
@@ -31,6 +33,8 @@ function App() {
           privateKey: Config.PRIVATE_KEY,
           chainID: Config.CHAIN_ID,
         });
+
+        setLoaded("Finish loading");
 
         setEtherSDK(ethersProvider);
       } catch (err) {
@@ -48,7 +52,7 @@ function App() {
     try {
       console.log(EtherSDK);
       const blockNumber = await EtherSDK.sendRelay({
-        method: "eth_blockByNumber",
+        method: "eth_blockNumber",
         params: [],
       });
 
@@ -116,7 +120,7 @@ function App() {
             <Code message={message} />
           </Grid>
           <Grid item xs={5}>
-            <Terminal message={message} />
+            <Terminal message={message} loaded={loaded} />
           </Grid>
           <Grid item xs={1}></Grid>
         </Grid>
