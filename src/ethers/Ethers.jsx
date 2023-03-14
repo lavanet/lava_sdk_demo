@@ -5,12 +5,11 @@ import { Button } from "@mui/material";
 import Header from "../header/Header";
 import Terminal from "../terminal/Terminal";
 import Code from "../code/Code";
-import Form from "../form/Form";
 import Config from "../config";
-import { LavaEtherProvider } from "lava-sdk";
+import { LavaEthersProvider } from "lava-sdk-providers";
 
 // Import css
-import "./App.css";
+import "./Ethers.css";
 
 // Other imports
 import { useState, useEffect } from "react";
@@ -24,15 +23,20 @@ function App() {
   useEffect(() => {
     const initSDK = async () => {
       try {
-        const etherSDK = await new LavaEtherProvider({
+        const etherSDK = await new LavaEthersProvider({
           privKey: Config.PRIVATE_KEY,
           chainID: Config.CHAIN_ID,
-          pairingListConfig: Config.LAVA_ENDPOINT, // Optional
         });
 
         setEtherSDK(etherSDK);
       } catch (err) {
-        console.log(err);
+        setMessage((m) => [
+          ...m,
+          {
+            type: "Error",
+            message: err.message,
+          },
+        ]);
       }
     };
 
@@ -44,13 +48,11 @@ function App() {
     // Print request
     printRequest("eth_blockNumber", []);
     try {
-      console.log(EtherSDK);
       const blockNumber = await EtherSDK.getBlockNumber();
 
       // Print response
       printResponse(blockNumber);
     } catch (err) {
-      console.log(err);
       setMessage((m) => [
         ...m,
         {
