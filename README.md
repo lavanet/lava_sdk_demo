@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -20,56 +19,44 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#demo">Demo</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
-
-
 ## Demo
 
 https://user-images.githubusercontent.com/42786413/204141279-1118577e-4b2e-4dd5-9c5c-0a8052be75cd.mp4
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Usage
+<!-- Installation -->
 
-1. Install dependecies
-    ```bash
-    yarn
-    ```
-2. Put correct variable data in the .env _(this demo does not support rest API, and only accepts rpc methods which has zero or one parameters)_
+## Installation
 
-3. Start React app
-    ```bash
-    yarn start
-    ```
+### Prerequisites (Alpha version)
 
+1. Create a wallet on the Lava Testnet, have LAVA tokens
+1. Stake in the chain you want to access
+1. Stake in Lava chain
+
+```bash
+git clone git@github.com:lavanet/lava_sdk_demo.git
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-## License
+<!-- Installation -->
 
-Copyright 2022 Lava Network
+## Playground
 
-Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the
-License. You may obtain a copy of the License at
+This repository serves as a playground for the Lava SDK, providing a simple React application that uses the SDK for decentralized and accountable access. The Lava SDK is imported and used in the `/sdk/form/form.jsx` file, allowing you to test its functionality in the demo React app.
 
+If you want to experiment with the Lava SDK further, you can also use the lavaEtherProvider which is imported and used inside `./sdk/ethers/ethers.jsx`.
 
-```
-http://www.apache.org/licenses/LICENSE-2.0
-```
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “
-AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
-language governing permissions and limitations under the License.
+Feel free to play around with the code and see how the Lava SDK can be integrated into your own applications.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
