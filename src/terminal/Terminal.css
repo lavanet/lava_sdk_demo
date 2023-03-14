@@ -27,7 +27,32 @@
   border-color: #049931;
 }
 
-.fakeMenu {
+.fakeMenuSDK {
+  width: 900px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.fakeScreenSDK {
+  overflow-x: hidden !important;
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.fakeMenuEthers {
   width: 740;
   box-sizing: border-box;
   height: 25px;
@@ -37,19 +62,17 @@
   border-top-left-radius: 5px;
 }
 
-.fakeScreen {
-
+.fakeScreenEthers {
   overflow-x: hidden !important;
   background-color: #151515;
   box-sizing: border-box;
-  width: 740px;
+  width: 800px;
   height: 500px;
   margin: 0 auto;
   padding: 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   overflow-y: scroll;
-
 }
 
 .terminalItem {
@@ -60,14 +83,14 @@
   margin-top: 10px;
 }
 
-.Response{
-  color:rgb(0, 176, 0)
+.Response {
+  color: rgb(0, 176, 0);
 }
 
-.Request{
-  color:rgb(0, 176, 0)
+.Request {
+  color: rgb(0, 176, 0);
 }
 
-.Error{
-  color:red
+.Error {
+  color: red;
 }

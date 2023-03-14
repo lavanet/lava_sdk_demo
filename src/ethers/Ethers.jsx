@@ -94,7 +94,7 @@ function App() {
     <div className="App">
       <Grid container direction="column" style={{ height: "100vh" }}>
         <Grid style={{ height: "30%" }}>
-          <Header />
+          <Header title={"Lava SDK & Ether.js"} />
         </Grid>
         <Grid style={{ height: "10%", margin: "0 auto", paddingTop: "30px" }}>
           <Button
@@ -113,7 +113,11 @@ function App() {
             <Code message={message} />
           </Grid>
           <Grid item xs={5}>
-            <Terminal message={message} />
+            <Terminal
+              message={message}
+              fakeScreen={"fakeScreenEthers"}
+              fakeMenuSDK={"fakeMenuEthers"}
+            />
           </Grid>
           <Grid item xs={1}></Grid>
         </Grid>
