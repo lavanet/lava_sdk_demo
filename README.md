@@ -20,8 +20,8 @@
 </div>
 
 ## Demo
+![lava-sdk-demo](https://user-images.githubusercontent.com/42786413/225036757-1a533ade-c1df-43d3-9adf-3bf085569d63.gif)
 
-https://user-images.githubusercontent.com/42786413/204141279-1118577e-4b2e-4dd5-9c5c-0a8052be75cd.mp4
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
