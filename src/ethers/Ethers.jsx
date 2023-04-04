@@ -6,7 +6,7 @@ import Header from "../header/Header";
 import Terminal from "../terminal/Terminal";
 import Code from "../code/Code";
 import Config from "../config";
-import { LavaEthersProvider } from "lava-sdk-providers";
+import { LavaEthersProvider } from "@lavanet/lava-sdk-providers";
 
 // Import css
 import "./Ethers.css";

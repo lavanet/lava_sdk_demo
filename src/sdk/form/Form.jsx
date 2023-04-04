@@ -1,7 +1,7 @@
 import "./Form.css";
 import { Grid, TextField, Button } from "@mui/material";
 import { useState, useEffect } from "react";
-import { LavaSDK } from "lava-sdk";
+import { LavaSDK } from "@lavanet/lava-sdk";
 import Config from "../../config";
 
 function Form(props) {
