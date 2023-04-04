@@ -8,9 +8,6 @@ function Header(props: any) {
         <Link className="menuItem" to="/">
           Lava SDK demo
         </Link>
-        <Link className="menuItem" to="/ethers">
-          Lava Ethers Provider
-        </Link>
       </div>
       <div className="HeaderText">
         <p className="Title"> {props.title} </p>
