@@ -55,8 +55,6 @@ npm run start
 
 This repository serves as a playground for the Lava SDK, providing a simple React application that uses the SDK for decentralized and accountable access. The Lava SDK is imported and used in the `/sdk/form/form.jsx` file, allowing you to test its functionality in the demo React app.
 
-If you want to experiment with the Lava SDK further, you can also use the lavaEtherProvider which is imported and used inside `./sdk/ethers/ethers.jsx`.
-
 Feel free to play around with the code and see how the Lava SDK can be integrated into your own applications.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
