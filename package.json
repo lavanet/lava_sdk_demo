@@ -5,8 +5,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@lavanet/lava-sdk": "^0.8.2",
-    "@lavanet/lava-sdk-providers": "^0.8.3",
+    "@lavanet/lava-sdk": "0.9.0",
+    "@lavanet/lava-sdk-providers": "0.9.0",
     "@mui/material": "^5.10.15",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
